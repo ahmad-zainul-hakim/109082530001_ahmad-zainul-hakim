@@ -17,6 +17,6 @@ func main(){
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](hhttps://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikum Week1/Output/Example.png)
+![Screenshot Output Unguided 1_1](hhttps://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Output/Example.png)
 [penjelasan]ini adalah contoh bro!
 

@@ -1,23 +1,22 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - ... </h1>
-<p align="center">[nama] - [NIM]</p>
+<p align="center">[Ahmad Zainul Hakim] - [109082530001]</p>
 
 ## Unguided 
 
-### 1. [Soal]
+### 1. [exampel soal buatkan blabla
 #### soal1.go
 
 ```go
 package main
-
 import "fmt"
 
-func main() {
-	fmt.Println("Hello World!")
+func main(){
+	var i, a int
 }
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
-[penjelasan]
+![Screenshot Output Unguided 1_1](hhttps://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikum Week1/output/Example.png)
+[penjelasan]ini adalah contoh bro!
 

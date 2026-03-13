@@ -31,6 +31,8 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweeek1/Output/Example.png)
-[penjelasan]ini adalah contoh bro!
+![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal1.png)
+[penjelasan] 
+Jadi program ini menggunakan prinsip yang sama ketika kita memindahkan 3 bola berwarna kewadah yang berbeda dengan bantuan 1 wadah kosong.Variabel "satu" ,"dua", "tiga" berperan sebagai wadah tujuan yang menjadi tempat akhir menyimpan bola. Dan variable "temp" sebagai wadah kosong tempat sementara untuk menyimpan bola.Endingnya posisi bola berubah, dan wadah kosong tetap menjadi wadah kosong
+
 

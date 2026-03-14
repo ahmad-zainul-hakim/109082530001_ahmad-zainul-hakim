@@ -31,8 +31,38 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal1.png)
+![Screenshot Output soal 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal1.png)
 [penjelasan] 
 Jadi program ini menggunakan prinsip yang sama ketika kita memindahkan 3 bola berwarna kewadah yang berbeda dengan bantuan 1 wadah kosong.Variabel "satu" ,"dua", "tiga" berperan sebagai wadah tujuan yang menjadi tempat akhir menyimpan bola. Dan variable "temp" sebagai wadah kosong tempat sementara untuk menyimpan bola.Endingnya posisi bola berubah, dan wadah kosong tetap menjadi wadah kosong
 
+#### soal2.go
+  
+```go
+package main
+import "fmt"
+func main() {
+	var m,k,h,u string 
+	var percobaanbenar int
+	var Berhasil bool
+	for i:=1;i<=5;i++{
+		fmt.Printf("Percobaan %d : ",i)
+		fmt.Scan(&m,&k,&h,&u)
+		if m=="merah" && k=="kuning" && h=="hijau" && u=="ungu"{
+			percobaanbenar=percobaanbenar+1
+		}
+	}
+	if percobaanbenar==5{
+		Berhasil=true
+	}else{
+		Berhasil=false
+	}	
+	fmt.Printf("Berhasil = %t ",Berhasil)
+}
+```
+### Output Unguided :
+
+##### Output 
+![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal2.png)
+[penjelasan] 
+Dengan memanfaatkan sistem perulangan, kita bisa membuat program yang akan menentukan apakah 5 percobaan tersebut berhasil atau tidak. Caranya dengan membuat perulangan yang berhenti di iterasi ke 5. Kemudian untuk setiap input (percobaan) benar, variabel "percobaan benar" akan bertambah 1 point. Dengan adanya logika "if percobaanbenar==5" algoritma akan memberikan output berupa true atau false, tergantung dari kelima inputan yang dimasukan.
 

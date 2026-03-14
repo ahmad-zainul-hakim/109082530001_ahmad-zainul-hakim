@@ -1,9 +1,9 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - ... </h1>
 <p align="center">[Ahmad Zainul Hakim] - [109082530001]</p>
 
-## Soal1 
+## Modul 2 
 
-### 1. [Soal Latihan Modul 2A]
+### 1.Soal 1
 #### soal1.go
   
 ```go
@@ -32,10 +32,10 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 
 ##### Output 
 ![Screenshot Output soal 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal1.png)
-[penjelasan] 
+![penjelasan] 
 Jadi program ini menggunakan prinsip yang sama ketika kita memindahkan 3 bola berwarna kewadah yang berbeda dengan bantuan 1 wadah kosong.Variabel "satu" ,"dua", "tiga" berperan sebagai wadah tujuan yang menjadi tempat akhir menyimpan bola. Dan variable "temp" sebagai wadah kosong tempat sementara untuk menyimpan bola.Endingnya posisi bola berubah, dan wadah kosong tetap menjadi wadah kosong
 
-### Soal2 :
+### Soal 2 :
 
 #### soal2.go
   
@@ -61,14 +61,14 @@ func main() {
 	fmt.Printf("Berhasil = %t ",Berhasil)
 }
 ```
-### Output Soal2 :
+### Output Soal 2 :
 
 ##### Output soal2 
 ![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal2.png)
-[penjelasan] 
+![penjelasan] 
 Dengan memanfaatkan sistem perulangan, kita bisa membuat program yang akan menentukan apakah 5 percobaan tersebut berhasil atau tidak. Caranya dengan membuat perulangan yang berhenti di iterasi ke 5. Kemudian untuk setiap input (percobaan) benar, variabel "percobaan benar" akan bertambah 1 point. Dengan adanya logika "if percobaanbenar==5" algoritma akan memberikan output berupa true atau false, tergantung dari kelima inputan yang dimasukan.
 
-### Soal3 :
+### Soal 3 :
 
 #### Soal3.go
 
@@ -97,10 +97,10 @@ func main() {
 	fmt.Printf("Detail berat : %d kg + %d gram \nDetail biaya : Rp.%d + Rp.%d \nTotal biaya : Rp.%d",kg,sisaGram,biaya,pengiriman,total)
 	}
 ```
-### Output soal3 :
+### Output soal 3 :
 ![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal3.png)
 
-[Penjelasan]
+![Penjelasan]
 Program ini dapat menghitung total biaya pengiriman parsel berdasarkan berat parsel.Dengan harga 10k per 1 kg program ini menghitung total biayanya. Tapi sebelum menghitung,ada beberapa aturan 
 1.Jika sisa berat tidak kurang dari 500
 gram, maka tambahan biaya kirim hanya Rp. 5,- per gram

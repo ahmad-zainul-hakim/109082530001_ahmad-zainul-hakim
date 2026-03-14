@@ -68,3 +68,45 @@ func main() {
 [penjelasan] 
 Dengan memanfaatkan sistem perulangan, kita bisa membuat program yang akan menentukan apakah 5 percobaan tersebut berhasil atau tidak. Caranya dengan membuat perulangan yang berhenti di iterasi ke 5. Kemudian untuk setiap input (percobaan) benar, variabel "percobaan benar" akan bertambah 1 point. Dengan adanya logika "if percobaanbenar==5" algoritma akan memberikan output berupa true atau false, tergantung dari kelima inputan yang dimasukan.
 
+### Soal3 :
+
+#### Soal3.go
+
+```go
+package main
+
+import "fmt"
+func main() {
+	var berat,kg,sisaGram,biaya,pengiriman,total int
+	fmt.Print("Berat parsel (gram) : ")
+	fmt.Scan(&berat)
+	kg=berat/1000
+	sisaGram = berat%1000
+	biaya=(berat/1000)*10000
+	if berat>10000{
+		pengiriman=sisaGram*5
+	}else if sisaGram>=500{
+		pengiriman=sisaGram*5
+	}else if sisaGram<500{
+		pengiriman=sisaGram*15
+	}
+	total=biaya+pengiriman
+	if berat>10000{
+		total=biaya
+	}
+	fmt.Printf("Detail berat : %d kg + %d gram \nDetail biaya : Rp.%d + Rp.%d \nTotal biaya : Rp.%d",kg,sisaGram,biaya,pengiriman,total)
+	}
+```
+### Output soal3 :
+![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal3.png)
+
+[Penjelasan]
+Program ini dapat menghitung total biaya pengiriman parsel berdasarkan berat parsel.Dengan harga 10k per 1 kg program ini menghitung total biayanya. Tapi sebelum menghitung,ada beberapa aturan 
+1.Jika sisa berat tidak kurang dari 500
+gram, maka tambahan biaya kirim hanya Rp. 5,- per gram
+2.jika sisa berat kurang dari 500
+gram, maka tambahan biaya akan dibebankan sebesar Rp. 15,- per gram
+3.Sisa berat (yang
+kurang dari 1kg) digratiskan biayanya apabila total berat ternyata lebih dari 10kg.
+
+Dengan memanfaatkan logika if, else if dan else. Program dapat dibuat. ketika ada input masuk, algoritma akan mengecek apakah dia bernilai benar untuk "if" pertama. jika tidak maka akan dilanjut ke "else if" dan apabila tidak benar, dia akan melanjutkan ke "else". Jika input benar di salah satu kondisi (if / else if/else) maka algoritma akan menampilkan output sesuai yang dimana nilai benar itu berhenti.

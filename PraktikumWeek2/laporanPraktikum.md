@@ -1,7 +1,7 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - ... </h1>
 <p align="center">[Ahmad Zainul Hakim] - [109082530001]</p>
 
-## Unguided 
+## Soal1 
 
 ### 1. [Soal Latihan Modul 2A]
 #### soal1.go
@@ -28,12 +28,14 @@ tiga = temp
 fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
 ```
-### Output Unguided :
+### Output soal1 :
 
 ##### Output 
 ![Screenshot Output soal 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal1.png)
 [penjelasan] 
 Jadi program ini menggunakan prinsip yang sama ketika kita memindahkan 3 bola berwarna kewadah yang berbeda dengan bantuan 1 wadah kosong.Variabel "satu" ,"dua", "tiga" berperan sebagai wadah tujuan yang menjadi tempat akhir menyimpan bola. Dan variable "temp" sebagai wadah kosong tempat sementara untuk menyimpan bola.Endingnya posisi bola berubah, dan wadah kosong tetap menjadi wadah kosong
+
+### Soal2 :
 
 #### soal2.go
   
@@ -59,9 +61,9 @@ func main() {
 	fmt.Printf("Berhasil = %t ",Berhasil)
 }
 ```
-### Output Unguided :
+### Output Soal2 :
 
-##### Output 
+##### Output soal2 
 ![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek2/output/soal2.png)
 [penjelasan] 
 Dengan memanfaatkan sistem perulangan, kita bisa membuat program yang akan menentukan apakah 5 percobaan tersebut berhasil atau tidak. Caranya dengan membuat perulangan yang berhenti di iterasi ke 5. Kemudian untuk setiap input (percobaan) benar, variabel "percobaan benar" akan bertambah 1 point. Dengan adanya logika "if percobaanbenar==5" algoritma akan memberikan output berupa true atau false, tergantung dari kelima inputan yang dimasukan.

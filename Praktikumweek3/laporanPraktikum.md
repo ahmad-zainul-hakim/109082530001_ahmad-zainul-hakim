@@ -29,9 +29,8 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
 ```
 ### Output soal1 :
-![Screenshot Output soal 2]
-(https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweek3/output/soal1.png )
-[]
+![Screenshot Output soal 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweek3/output/soal1.png )
+[Penjelasan]
 
 ### Soal 2 :
 ```go
@@ -66,9 +65,8 @@ func main (){
 ```
 
 ### Output Soal 2 :
-![Screenshot Output soal 2] 
-(https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweek3/output/soal2.png)
-[]
+![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweek3/output/soal2.png)
+[Penjelasan]
 
 ### Soal 3 :
 ```go
@@ -108,6 +106,5 @@ func didalam (cx,cy,radius,x,y float64) bool {
 }
 ```
 ### Output soal 3 :
-![Screenshot Output soal 3]
-(https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweek3/output/soal3.png )
-[]
+![Screenshot Output soal 3](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweek3/output/soal3.png)
+![Penjelasan]

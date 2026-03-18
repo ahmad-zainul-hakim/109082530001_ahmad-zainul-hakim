@@ -23,6 +23,6 @@ func main (){
 	gohof:= g(h(f(x2)))
 	hofog:= h(f(g(x3)))
 
-	fmt.Printf("%d \n %d \n %d",fogog,gohof,hofog)
+	fmt.Printf(" %d \n %d \n %d",fogog,gohof,hofog)
 
 }

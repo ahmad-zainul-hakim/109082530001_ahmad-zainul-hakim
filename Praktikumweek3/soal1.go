@@ -30,5 +30,5 @@ permutasiac:= (permutasi(a,c))
 kombinasiac:= (kombinasi(a,c))
 permutasibd:= (permutasi(b,d))
 kombinasibd:= (kombinasi(b,d))
-fmt.Printf("%d %d\n%d %d", permutasiac, kombinasiac, permutasibd, kombinasibd)
+fmt.Printf(" %d %d\n%d %d", permutasiac, kombinasiac, permutasibd, kombinasibd)
 }

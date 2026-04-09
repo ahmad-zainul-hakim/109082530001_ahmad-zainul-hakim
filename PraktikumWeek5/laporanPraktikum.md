@@ -31,7 +31,7 @@
 
 ##### Output soal1.go
 ![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek5/Output/Soal1.png)
-[penjelasan]ini adalah contoh bro!
+Program untuk menampilkan deret fibonacci menggunakan metode rekursif.
 
 ### 2. SOAL 2
 #### soal2.go

@@ -45,11 +45,11 @@ func kombinasi (n,r int, hasil*int){
 ```
 ### Output Unguided :
 
-##### Output 
+##### Output soal1.go
 ![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek4/Output/soal1.png)
 Program ini menampilkan cara menghitung permutasi dan kombinasi dengan menggunakan prosedur faktorial, Permutasian, dan kombinasi
 
-### Soal 1
+### SOAL 2
 #### Soal2.go
 ```go
 package main
@@ -102,6 +102,6 @@ func hitungSkor(nama string, hasilskor, hasilsoal *int) {
 ```
 
 ### Output Unguided
-#### Output
+#### Output soal2.go
 ![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek4/Output/soal2.png)
 Program ini adalah program untuk menghitung skor dan menentukan pemenang. Pemenang dhitung berdasarkan berapa banyak soal yang diselesaikan. Jika jumlah soal yang diselesaikan sama, maka pmenang ditentukan berdasarkan pada siapa yang paling cepat menyelesaikan.

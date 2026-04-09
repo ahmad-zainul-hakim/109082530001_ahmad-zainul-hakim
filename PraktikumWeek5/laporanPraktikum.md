@@ -29,12 +29,12 @@
 ```
 ### Output Unguided :
 
-##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweeek1/Output/Example.png)
+##### Output soal1.go
+![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek5/Output/Soal1.png)
 [penjelasan]ini adalah contoh bro!
 
-### 1. SOAL 1
-#### soal1.go
+### 2. SOAL 2
+#### soal2.go
   
 ```go
 package main
@@ -64,12 +64,12 @@ func bintang(x int){
 ```
 ### Output Unguided :
 
-##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweeek1/Output/Example.png)
-[penjelasan]ini adalah contoh bro!
+##### Output soal2.go
+![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek5/Output/soal2.png)
+Program ini adalah program yang menampilkan tanda "*" sebanyak n input. Ini adalah versi rekursifnya, program pola bintang yang biasa umumnya dibuat dengan menggunakan perulangan.
 
-### 1. SOAL 1
-#### soal1.go
+### 3. SOAL 3
+#### soal3.go
   
 ```go
 package main
@@ -92,7 +92,7 @@ func faktor(n , i int){
 ```
 ### Output Unguided :
 
-##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/Praktikumweeek1/Output/Example.png)
-[penjelasan]ini adalah contoh bro!
+##### Output soal3.go
+![Screenshot Output Unguided 1_1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek5/Output/soal3.png)
+Ini adalah program untuk mencari faktor suatu bilangan menggunakan metode rekursif.
 

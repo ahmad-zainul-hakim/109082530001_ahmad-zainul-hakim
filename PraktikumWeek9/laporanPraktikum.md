@@ -250,3 +250,4 @@ func palindrom(t tabel, n int) bool {
 ```
 ### Output Modul 9 no 4 :
 ![Screenshot Output Modul 9 no 4](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek9/Output/no4.png)
+Program ini digunakan untuk mengecek apakah sebuah rangkaian huruf yang membentuk kata dapat dikategorikan sebagai palindrom atau bukan.

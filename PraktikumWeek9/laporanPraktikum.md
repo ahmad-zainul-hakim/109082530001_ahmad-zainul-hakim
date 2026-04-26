@@ -48,8 +48,8 @@ func dalamlingkaran(l lingkaran, t titik) bool {
 ![Screenshot Output Modul 9 no 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek9/Output/no1.png)
 Ini adalah Program untuk mencari suatu titik diantara 2 lingkaran. Anggap saja ada 2 lingkaran yaitu lingkaran A dan lingkaran B, kita memasukan koordinat titik pusat dan radius titik A dan B. Dan dari kedua lingkaran tersebut kita memasukan koordinat suatu titik, dan program ini akan menampilkan ada didalam lingkaran mana saja titik itu berada.
 
-### 1. SOAL 1
-#### no1.go
+### 2. SOAL 2
+#### no2.go
   
 ```go
 package main
@@ -149,3 +149,42 @@ func main() {
 ##### Output no2.go
 ![Screenshot Output Modul 9 no 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek9/Output/no2.png)
 Program diatas adalah program untuk Membuat array dengan panjang yang ditentukan oleh input user (n). Dan dari program itu kita bisa mengetahui nilai indeks ganjil dan genapnya apa saja, serta kia dapat menghapus salah satu indeks tersebut. Dan setelah kita menghapus salah 1 indeks tersebut, kita dapat mencari rata rata nya dan nilai standard deviasi nya. Selain itu juga, kita dapat mengetahui sebanyak apa nilai dalam suatu indeks yang muncul. 
+
+### 3. SOAL 3
+#### no3.go
+```go
+	package main
+	import "fmt"
+
+	func main() {
+		var klubA,klubB string
+		var skorA,skorB int
+		var pemenang []string
+		fmt.Print("Klub A : ")
+		fmt.Scanln(&klubA)
+		fmt.Print("Klub B : ")
+		fmt.Scanln(&klubB)
+		i:=1
+		for {
+			fmt.Printf("Pertandingan %d : ",i)
+			fmt.Scanln(&skorA,&skorB)
+			if skorA<0||skorB<0{
+				break
+			}else if skorA>skorB{
+				pemenang = append(pemenang, klubA)
+			}else if skorB>skorA{
+				pemenang = append(pemenang, klubB)
+			}else if skorA==skorB{
+				pemenang = append(pemenang, "Draw")
+			}
+			i++
+		}
+		for j:=0;j<len(pemenang);j++{
+			fmt.Printf("Hasil %d : %s\n",j+1,pemenang[j])
+		}
+		fmt.Println("Pertandingan selesai")
+	}
+```
+### Output Modul 9 no 3 :
+![Screenshot Output Modul 9 no 3](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek9/Output/no3.png)
+Program diatas adalah sebuah program yang dapat merekap banyaknya pertandingan antara 2 team. Semua skor pertandingan yang telah dimainkan diinputkan dan direkap siapa saja pemenang nya. 

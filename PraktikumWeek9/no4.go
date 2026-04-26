@@ -1,10 +1,19 @@
 package main
-
 import "fmt"
-
 const NMAX int = 127
-
 type tabel [NMAX]rune
+
+func main() {
+	var tab tabel
+	var m int
+	fmt.Print("Teks : ")
+	isiArray(&tab, &m)
+	CekPalindrom := palindrom(tab, m)
+	MembalikanArray(&tab, m)
+	fmt.Print("Reverse teks : ")
+	cetakArray(tab, m)
+	fmt.Println("Palindrom ?", CekPalindrom)
+}
 
 func isiArray(t *tabel, n *int) {
 	var ch rune
@@ -31,13 +40,12 @@ func cetakArray(t tabel, n int) {
 	fmt.Println()
 }
 
-func balikanArray(t *tabel, n int) {
+func MembalikanArray(t *tabel, n int) {
 	for i := 0; i < n/2; i++ {
 		t[i], t[n-1-i] = t[n-1-i], t[i]
 	}
 }
 
-// ✅ versi palindrom yang benar (tanpa copy array)
 func palindrom(t tabel, n int) bool {
 	for i := 0; i < n/2; i++ {
 		if t[i] != t[n-1-i] {
@@ -45,23 +53,4 @@ func palindrom(t tabel, n int) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-	var tab tabel
-	var m int
-
-	fmt.Print("Teks : ")
-	isiArray(&tab, &m)
-
-	// cek dulu sebelum dibalik
-	isPalin := palindrom(tab, m)
-
-	// baru dibalik
-	balikanArray(&tab, m)
-
-	fmt.Print("Reverse teks : ")
-	cetakArray(tab, m)
-
-	fmt.Println("Palindrom ?", isPalin)
 }

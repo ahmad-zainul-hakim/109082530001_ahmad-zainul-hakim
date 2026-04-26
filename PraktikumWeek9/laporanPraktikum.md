@@ -188,3 +188,11 @@ Program diatas adalah program untuk Membuat array dengan panjang yang ditentukan
 ### Output Modul 9 no 3 :
 ![Screenshot Output Modul 9 no 3](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek9/Output/no3.png)
 Program diatas adalah sebuah program yang dapat merekap banyaknya pertandingan antara 2 team. Semua skor pertandingan yang telah dimainkan diinputkan dan direkap siapa saja pemenang nya. 
+
+### 4. SOAL 4
+#### no4.go
+  
+```go
+```
+### Output Modul 9 no 4 :
+![Screenshot Output Modul 9 no 4](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek9/Output/no4.png)

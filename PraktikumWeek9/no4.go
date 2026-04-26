@@ -21,11 +21,9 @@ func isiArray(t *tabel, n *int) {
 
 	for {
 		fmt.Scanf("%c", &ch)
-
 		if ch == '.' || ch == '\n' {
 			break
 		}
-
 		if ch != ' ' {
 			t[*n] = ch
 			*n++

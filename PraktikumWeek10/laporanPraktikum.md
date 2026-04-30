@@ -3,7 +3,8 @@
 
 ## Modul 10 
 
-### 1. [Sebuah program digunakan untuk mendata berat anak kelinci yang akan dijual ke pasar. Program ini menggunakan array dengan kapasitas 1000 untuk menampung data berat anak kelinci yang akan dijual. Masukan terdiri dari sekumpulan bilangan, yang mana bilangan pertama adalah bilangan bulat N yang menyatakan banyaknya anak kelinci yang akan ditimbang beratnya. Selanjutnya N bilangan riil berikutnya adalah berat dari anak kelinci yang akan dijual. Keluaran terdiri dari dua buah bilangan riil yang menyatakan berat kelinci terkecil dan terbesar.]
+### 1.
+Sebuah program digunakan untuk mendata berat anak kelinci yang akan dijual ke pasar. Program ini menggunakan array dengan kapasitas 1000 untuk menampung data berat anak kelinci yang akan dijual. Masukan terdiri dari sekumpulan bilangan, yang mana bilangan pertama adalah bilangan bulat N yang menyatakan banyaknya anak kelinci yang akan ditimbang beratnya. Selanjutnya N bilangan riil berikutnya adalah berat dari anak kelinci yang akan dijual. Keluaran terdiri dari dua buah bilangan riil yang menyatakan berat kelinci terkecil dan terbesar.
 
 #### soal1.go
 ```go
@@ -33,44 +34,53 @@ func main(){
 }
 ```
 ##### Output soal 1
-![Screenshot Output soal 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek10/iwak.png)
-[penjelasan]
+![Screenshot Output soal 1](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek10/kelinci.png)
+[PENJELASAN]
 
-### 2. [Sebuah program digunakan untuk menentukan tarif ikan yang akan dijual ke pasar. Program ini menggunakan array dengan kapasitas 1000 untuk menampung data berat ikan yang akan dijual. Masukan terdiri dari dua baris, yang mana baris pertama terdiri dari dua bilangan bulat x dan y. Bilangan x menyatakan banyaknya ikan yang akan dijual, sedangkan y adalah banyaknya ikan yang akan dimasukan ke dalam wadah. Baris kedua terdiri dari sejumlah x bilangan riil yang menyatakan banyaknya ikan yang akan dijual. Keluaran terdiri dari dua baris. Baris pertama adalah kumpulan bilangan riil yang menyatakan total berat ikan di setiap wadah (jumlah wadah tergantung pada nilai x dan y, urutan ikan yang dimasukan ke dalam wadah sesuai urutan pada masukan baris ke-2). Baris kedua adalah sebuah bilangan riil yang menyatakan berat rata-rata ikan di setiap wadah.]
+
+### 2. 
+Sebuah program digunakan untuk menentukan tarif ikan yang akan dijual ke pasar. Program ini menggunakan array dengan kapasitas 1000 untuk menampung data berat ikan yang akan dijual. Masukan terdiri dari dua baris, yang mana baris pertama terdiri dari dua bilangan bulat x dan y. Bilangan x menyatakan banyaknya ikan yang akan dijual, sedangkan y adalah banyaknya ikan yang akan dimasukan ke dalam wadah. Baris kedua terdiri dari sejumlah x bilangan riil yang menyatakan banyaknya ikan yang akan dijual. Keluaran terdiri dari dua baris. Baris pertama adalah kumpulan bilangan riil yang menyatakan total berat ikan di setiap wadah (jumlah wadah tergantung pada nilai x dan y, urutan ikan yang dimasukan ke dalam wadah sesuai urutan pada masukan baris ke-2). Baris kedua adalah sebuah bilangan riil yang menyatakan berat rata-rata ikan di setiap wadah.
 
 #### soal2.go
 ```go
 package main
 import "fmt"
 func main(){
-	var array [1000]float32
-	var n int
-	fmt.Print("Masukan berapa jumlah anak kelinci yang mau ditimbang : ")
-	fmt.Scan(&n)
-	fmt.Print("Data berat kelinci : ")
-	for i:=0;i<n;i++{
-		fmt.Scan(&array[i])
-		fmt.Print(" ")
+	var iwak [1000]int 
+	var x,y,total,totalberat int
+	fmt.Print("Masukan banyak ikan yang akan dijual : ")
+	fmt.Scanln(&x)
+	fmt.Print("Masukan kapasitas ikan perwadah : ")
+	fmt.Scanln(&y)
+	fmt.Print("Berat ikan ikan yang akan dijual : ")
+	for i:=0;i<x;i++{
+		fmt.Scan(&iwak[i])
 	}
-	min:= array[0]
-	max:= array[0]
-	for i:=1;i<n;i++{
-		if array[i]<min{
-			min=array[i]
+	fmt.Print("Berat perwadah : ")
+	for i:=0;i<x;i+=y{
+		for j:=i;j<i+y && j<x;j++{
+			total=total+iwak[j]
 		}
-		if array[i]>max{
-			max=array[i]
-		}
+		totalberat=totalberat+total
+		fmt.Printf("%d ",total)
+		total=0
 	}
-	fmt.Printf("\nBerat kelinci terkecil : %.2f\nBerat kelinci terbesar adalah : %.2f ",min,max)
+	wadah:=x/y
+	if x%y > 0{
+		wadah=wadah+1
+	}
+	ratarata:=float32(totalberat)/float32(wadah)
+	fmt.Printf("\nRata rata berat perwadah : %.2f",ratarata)
 }
 ```
 
 ##### Output soal 2
-![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek10/kelinci.png)
-[penjelasan]
+![Screenshot Output soal 2](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek10/iwak.png)
+[PENJELASAN]
+Ini adalah program untuk menghitung total berat di setiap wadah ikan, setiap wadah memiliki max kapasitas jumlah ikan. Besarnya kapasitas wadah ditentukan oleh user. 
 
-### 3 [Pos Pelayanan Terpadu (posyandu) sebagai tempat pelayanan kesehatan perlu mencatat data berat balita (dalam kg). Petugas akan memasukkan data tersebut ke dalam array. Dari data yang diperoleh akan dicari berat balita terkecil, terbesar, dan reratanya.]
+### 3 
+Pos Pelayanan Terpadu (posyandu) sebagai tempat pelayanan kesehatan perlu mencatat data berat balita (dalam kg). Petugas akan memasukkan data tersebut ke dalam array. Dari data yang diperoleh akan dicari berat balita terkecil, terbesar, dan reratanya.
 ```go
 package main
 import "fmt"
@@ -114,5 +124,6 @@ func ratarataberat(arrBerat arrBalita, n int) float64 {
 ```
 ##### Output soal 3
 ![Screenshot Output soal 3](https://github.com/ahmad-zainul-hakim/109082530001_ahmad-zainul-hakim/blob/main/PraktikumWeek10/posyandu.png)
-[penjelasan] 
+[PENJELASAN]
+Ini adalah program untuk menimbang banyaknya balita kemudian mencari berat terkecil dan berat terbesar serta rata ratanya. 
 

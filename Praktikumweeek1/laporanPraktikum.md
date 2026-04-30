@@ -3,7 +3,7 @@
 
 ## Unguided 
 
-### 1. [exampel soal buatkan blabla
+### 1. [exampel soal buatkan blabla]
 #### soal1.go
   
 ```go

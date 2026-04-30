@@ -1,0 +1,39 @@
+package main
+import "fmt"
+type arrBalita [100]float64
+func main() {
+	var data arrBalita
+	var n int
+	var min, max float64
+	fmt.Print("Masukan banyak data berat balita : ")
+	fmt.Scan(&n)
+	for i := 0; i < n; i++ {
+		fmt.Printf("Masukan berat balita ke-%d: ", i+1)
+		fmt.Scan(&data[i])
+	}
+	hitungMinMax(data, n, &min, &max)
+	rata2 := ratarataberat(data, n)
+	fmt.Printf("Berat balita minimum: %.2f kg\n", min)
+	fmt.Printf("Berat balita maksimum: %.2f kg\n", max)
+	fmt.Printf("Rerata berat balita: %.2f kg\n", rata2)
+} 
+func hitungMinMax(berat arrBalita, n int, bMin, bMax *float64) {
+	*bMin = berat[0]
+	*bMax = berat[0]
+	for i := 1; i < n; i++ {
+		if berat[i] < *bMin {
+		*bMin = berat[i]
+		}
+		if berat[i] > *bMax {
+			*bMax = berat[i]
+		}
+	}
+}
+func ratarataberat(arrBerat arrBalita, n int) float64 {
+	var total float64 = 0
+
+	for i := 0; i < n; i++ {
+		total += arrBerat[i]
+	}
+	return total / float64(n)
+}

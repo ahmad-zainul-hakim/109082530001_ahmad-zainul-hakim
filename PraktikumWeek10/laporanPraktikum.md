@@ -79,7 +79,7 @@ func main(){
 [PENJELASAN]
 Ini adalah program untuk menghitung total berat di setiap wadah ikan, setiap wadah memiliki max kapasitas jumlah ikan. Besarnya kapasitas wadah ditentukan oleh user. 
 
-### 3 
+### 3.
 Pos Pelayanan Terpadu (posyandu) sebagai tempat pelayanan kesehatan perlu mencatat data berat balita (dalam kg). Petugas akan memasukkan data tersebut ke dalam array. Dari data yang diperoleh akan dicari berat balita terkecil, terbesar, dan reratanya.
 ```go
 package main
